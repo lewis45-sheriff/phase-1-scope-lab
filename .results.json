@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 5,
+    "passes": 2,
+    "pending": 0,
+    "failures": 3,
+    "start": "2024-06-29T09:24:14.147Z",
+    "end": "2024-06-29T09:24:15.073Z",
+    "duration": 926
+  },
+  "tests": [
+    {
+      "title": "returns the customerName",
+      "fullTitle": "Fix the Scope declare customerName to be bob in global scope returns the customerName",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "modifies the customerName variable",
+      "fullTitle": "Fix the Scope upperCaseCustomerName() modifies the customerName variable",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: upperCaseCustomerName is not defined\n    at Context.<anonymous> (test/indexTest.js:14:7)\n    at process.processImmediate (node:internal/timers:478:21)",
+        "message": "upperCaseCustomerName is not defined"
+      }
+    },
+    {
+      "title": "setBestCustomer",
+      "fullTitle": "Fix the Scope setBestCustomer() setBestCustomer",
+      "duration": 16,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'not bob'",
+        "showDiff": true,
+        "expected": "not bob",
+        "stack": "AssertionError: expected undefined to equal 'not bob'\n    at Context.<anonymous> (test/indexTest.js:25:38)\n    at process.processImmediate (node:internal/timers:478:21)"
+      }
+    },
+    {
+      "title": "overwrites the best customer",
+      "fullTitle": "Fix the Scope overwriteBestCustomer() overwrites the best customer",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: overwriteBestCustomer is not defined\n    at Context.<anonymous> (test/indexTest.js:31:7)\n    at process.processImmediate (node:internal/timers:478:21)",
+        "message": "overwriteBestCustomer is not defined"
+      }
+    },
+    {
+      "title": "unsuccessfully tries to reassign the least favorite customer",
+      "fullTitle": "Fix the Scope changeLeastFavoriteCustomer() unsuccessfully tries to reassign the least favorite customer",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "modifies the customerName variable",
+      "fullTitle": "Fix the Scope upperCaseCustomerName() modifies the customerName variable",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: upperCaseCustomerName is not defined\n    at Context.<anonymous> (test/indexTest.js:14:7)\n    at process.processImmediate (node:internal/timers:478:21)",
+        "message": "upperCaseCustomerName is not defined"
+      }
+    },
+    {
+      "title": "setBestCustomer",
+      "fullTitle": "Fix the Scope setBestCustomer() setBestCustomer",
+      "duration": 16,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'not bob'",
+        "showDiff": true,
+        "expected": "not bob",
+        "stack": "AssertionError: expected undefined to equal 'not bob'\n    at Context.<anonymous> (test/indexTest.js:25:38)\n    at process.processImmediate (node:internal/timers:478:21)"
+      }
+    },
+    {
+      "title": "overwrites the best customer",
+      "fullTitle": "Fix the Scope overwriteBestCustomer() overwrites the best customer",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: overwriteBestCustomer is not defined\n    at Context.<anonymous> (test/indexTest.js:31:7)\n    at process.processImmediate (node:internal/timers:478:21)",
+        "message": "overwriteBestCustomer is not defined"
+      }
+    }
+  ],
+  "passes": [
+    {
+      "title": "returns the customerName",
+      "fullTitle": "Fix the Scope declare customerName to be bob in global scope returns the customerName",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "unsuccessfully tries to reassign the least favorite customer",
+      "fullTitle": "Fix the Scope changeLeastFavoriteCustomer() unsuccessfully tries to reassign the least favorite customer",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
